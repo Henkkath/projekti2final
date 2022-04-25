@@ -12,9 +12,8 @@ function loadMovies() {                 //lataa leffojen tiedot finnkino APIsta
   
           const listItem = document.createElement("li");
           const movieName = show.getElementsByTagName("Title")[0].innerHTML;
-          const movieTime = show.getElementsByTagName("dttmShowStartUTC")[0].innerHTML;
+          const movieTime = show.getElementsByTagName("dttmShowStart")[0].innerHTML;
           const img = document.createElement("img")
-          console.log(img);
           const movieImg = show.getElementsByTagName("EventSmallImagePortrait")[0].innerHTML;
           img.src = movieImg;
           listItem.innerHTML = movieName + " " + movieTime;

@@ -4,19 +4,25 @@
     box-sizing: border-box;
   }
   body{
-    background-color: rgba(11, 70, 34, 0.589);
-    color: black;
+    background-color: black;
+    color: white;
     font-family: 'Poppins' , sans-serif;
-  }
-  header{
-    font-size: 1rem;
-    color:black;
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    }
+  header{
+    font-size: 1rem;
+    color:goldenrod;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
   }
 
   button{
-    margin: 0;
+    margin-bottom: 1px;
     padding: 0.5rem;
     font-size: 1rem;
     border: none;
@@ -26,9 +32,9 @@
     transition: all 0.3s ease;
   }
   select{
-      height: 2rem;
+      height: 2.2rem;
   }
-  #demo{
-      align-items: center;
-      justify-content: center;
+  li{
+    list-style: none;
+    padding: 1rem;
   }
