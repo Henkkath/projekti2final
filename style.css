@@ -20,7 +20,6 @@
     align-items: center;
     padding: 1rem;
   }
-
   button{
     margin-bottom: 1px;
     padding: 0.5rem;
@@ -29,10 +28,30 @@
     color:black;
     background: white;
     cursor: pointer;
-    transition: all 0.3s ease;
   }
   select{
-      height: 2.2rem;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 5px;
+  }
+  .select::after{
+   content: "\25BC";
+   width: auto;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   padding: 0.25rem;
+   pointer-events: none;
+  }
+  .select:hover::after{
+    background: white;
+    color: grey;
   }
   li{
     list-style: none;

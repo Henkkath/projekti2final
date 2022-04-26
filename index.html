@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elokuva appi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="demo">
+<div id="main">
     <header>
     <h1>Finnkinon ohjelmisto</h1>
-    <p>Valitse valikosta teatteri ja hae elokuvat nappia painamalla</p>
+    <p>Valitse valikosta teatteri ja hae päivän elokuvat nappia painamalla</p>
     </header>   
-    <button type="nappi" onclick="loadMovies()">Hae Elokuvia</button>
-    <select id="theater" name="teatterit" onchange="leffa(this.value)" class="filter-theater">
+    <button type="button" onclick="loadMovies()">Hae Elokuvia</button>
+    <select id="theater" name="teatterit" onchange="leffa(this.value)" class="filter-theater"> <!--Dropdown valikko teattereille value=teatterin ID xml-tiedostossa-->
         <option value="1039">Espoo: OMENA</option>
         <option value="1038">Espoo: SELLO</option>
         <option value="1045">Helsinki: ITIS</option>
@@ -35,13 +35,7 @@
         <option value="1035">Tampere: PLEVNA</option>
         <option value="1022">Turku: KINOPALATSI</option>
     </select>
-
-
 </div>
-
-
-    
-</div>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
